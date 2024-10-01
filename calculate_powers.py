@@ -8,8 +8,15 @@ def calculate_powers(base, power):
         return 1
 
 # Get the user input of base and power
-entered_base = int(input("Enter the base number: "))
-entered_power = int(input("Enter the power: "))
+try:
+    entered_base = int(input("Enter the base number: "))
+    entered_power = int(input("Enter the power: "))
+except ValueError:
+    print("Invalid input. Please enter an integer.")
+    exit()
+except:
+    print("Something went wrong. Exiting the program.")
+    exit()
 
 # Call the function
 result = calculate_powers(entered_base, entered_power)
