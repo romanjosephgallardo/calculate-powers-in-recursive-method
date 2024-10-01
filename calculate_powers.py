@@ -11,6 +11,9 @@ method to calculate powers?
 
 # code here
 # Get user input of base and power
+base = int(input("Enter the base number:"))
+power = int(input("Enter the power: "))
+
 # Define calculate powers function
 # Call the function
 # Print the result
